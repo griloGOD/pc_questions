@@ -37,7 +37,6 @@
     {"id":{"name":"sProcessador","path":"sprites/sProcessador/sProcessador.yy",},},
     {"id":{"name":"sdMenuselect","path":"sounds/sdMenuselect/sdMenuselect.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
-    {"id":{"name":"sFundo","path":"sprites/sFundo/sFundo.yy",},},
     {"id":{"name":"oTroia","path":"objects/oTroia/oTroia.yy",},},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},},
     {"id":{"name":"ftQuests","path":"fonts/ftQuests/ftQuests.yy",},},
