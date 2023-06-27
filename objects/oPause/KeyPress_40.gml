@@ -1,5 +1,7 @@
-index++;
+if(global.pause){
+	index++;
 
-if(index >= posicao){
-	index = 0;
+	if(index >= posicao){
+		index = 0;
+	}
 }

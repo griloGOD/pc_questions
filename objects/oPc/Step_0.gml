@@ -22,17 +22,56 @@ if keyboard_check(vk_right) or keyboard_check(ord("D")){
 }
 
 // Limites horizontais
-if (x < 0) {
-    x = 0;
+
+var half_width = sprite_width / 2; // Metade da largura do sprite do personagem
+var half_height = sprite_height / 2; // Metade da altura do sprite do personagem
+
+if (x - half_width < 0) {
+    x = half_width;
 }
-if (x + sprite_width > room_width) {
-    x = room_width - sprite_width;
+if (x + half_width > room_width) {
+    x = room_width - half_width;
 }
 
 // Limites verticais
-if (y < 0) {
-    y = 0;
+if (y - half_height < 0) {
+    y = half_height;
 }
-if (y + sprite_height > room_height) {
-    y = room_height - sprite_height;
+if (y + half_height > room_height) {
+    y = room_height - half_height;
+}
+
+//Tempo da sala
+if (!global.pause){
+	
+	if (global.tempo>0){
+		global.tempo=global.tempo-delta_time/1000000;
+	}else global.tempo=0{
+		global.tempo_restante = ceil(global.tempo);
+	}
+	if (global.tempo_restante =0){
+		global.erros+=1;
+		room_goto_next();
+	}
+}
+
+//Coletando os Itens
+
+if(global.roomname == "Room1"){
+	global.pergunta="Item responsável por guardar \ntemporariamente toda a informação \nque o computador precisa:";
+	if (ram==1){
+		global.acertos+=1;
+		room_goto_next()
+	}else if (item_errado==1){
+		global.erros+=1;
+		room_goto_next()
+	}
+}else if(global.roomname == "Room2"){
+	if (ram==1){
+		global.erros+=1;
+		room_goto_next()
+	}else if (item_errado==1){
+		global.acertos+=1;
+		room_goto_next()
+	}
 }

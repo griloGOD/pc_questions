@@ -16,8 +16,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "cfgs",
+    "path": "folders/Objetos/cfgs.yy",
   },
   "parentObjectId": null,
   "persistent": false,

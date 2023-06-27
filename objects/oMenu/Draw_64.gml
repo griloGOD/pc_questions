@@ -12,10 +12,10 @@ for(var i =0; i < op_max; i++)
 	
 	if (index == i){
 	
-		draw_set_color(c_yellow);
+		draw_set_color(make_color_rgb(194, 211, 104));
 	}else{
 	
-		draw_set_color(c_white);
+		draw_set_color(make_color_rgb(242, 240, 229));
 	}
 	
 	draw_text_transformed(w_gui / 2, h_gui / 2.5 + h_str * i, menu_inicial[i], 1, 1, 0);
