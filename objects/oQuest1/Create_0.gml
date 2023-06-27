@@ -1,2 +1,12 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+
+
+quest = [
+	"Colete o componente resposável",
+	"pelo processamento de informações",
+	"do computador.",
+	"Pressione ENTER para iniciar"
+];
+
+index = 0;
+
+op_max = array_length(quest);
