@@ -1,2 +1,5 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+//pausando o game
+if(keyboard_check_pressed(vk_escape)){
+	global.pause = !global.pause;
+}
+

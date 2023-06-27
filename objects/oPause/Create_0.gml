@@ -1,2 +1,7 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+global.pause = false;
+
+menu_pause = ["Voltar", "Opções", "Sair"];
+
+index = 0;
+//pega a quantidade de itens do menu
+posicao = array_length(menu_pause); 

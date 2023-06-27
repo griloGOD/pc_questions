@@ -1,2 +1,9 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+
+if (index == 0){
+
+	global.pause = !global.pause;
+
+}else if(index == 2){
+	
+	room_goto(0);
+}
