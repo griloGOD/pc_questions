@@ -60,22 +60,21 @@ if (!global.pause){
 //Coletando os Itens
 
 if(global.roomname == "Room1"){
-	global.pergunta=global.quest1;
-	if (ram==1){
+	if (processador==1){
 		audio_play_sound(sdCerto,1,0);
 		global.acertos+=1;
 		room_goto_next()
-	}else if (item_errado==1 || processador==1){
+	}else if (monitor==1 || ram==1){
 		audio_play_sound(sdErrado,1,0);
 		global.erros+=1;
 		room_goto_next()
 	}
 }else if(global.roomname == "Room2"){
-	if (item_errado==1){
+	if (ram==1){
 		audio_play_sound(sdCerto,1,0);
 		global.acertos+=1;
 		room_goto_next()
-	}else if (ram==1 || processador==1){
+	}else if (hd==1 || mouse==1){
 		audio_play_sound(sdErrado,1,0);
 		global.erros+=1;
 		room_goto_next()
