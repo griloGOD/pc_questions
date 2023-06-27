@@ -60,33 +60,28 @@ if (!global.pause){
 //Coletando os Itens
 
 if(global.roomname == "Room1"){
-	global.pergunta=global.quest1;
+	global.pergunta="Item responsável por guardar \ntemporariamente toda a informação \nque o computador precisa:";
 	if (ram==1){
-		audio_play_sound(sdCerto,1,0);
 		global.acertos+=1;
 		room_goto_next()
 	}else if (item_errado==1 || processador==1){
-		audio_play_sound(sdErrado,1,0);
 		global.erros+=1;
+		
 		room_goto_next()
 	}
 }else if(global.roomname == "Room2"){
 	if (item_errado==1){
-		audio_play_sound(sdCerto,1,0);
 		global.acertos+=1;
 		room_goto_next()
 	}else if (ram==1 || processador==1){
-		audio_play_sound(sdErrado,1,0);
 		global.erros+=1;
 		room_goto_next()
 	}
 }else if(global.roomname == "Room3"){
 	if (processador==1){
-		audio_play_sound(sdCerto,1,0);
 		global.acertos+=1;
 		room_goto_next()
 	}else if (item_errado==1 || ram==1){
-		audio_play_sound(sdErrado,1,0);
 		global.erros+=1;
 		room_goto_next()
 	}
