@@ -50,8 +50,10 @@ if (!global.pause){
 		global.tempo_restante = ceil(global.tempo);
 	}
 	if (global.tempo_restante =0){
-		global.erros+=1;
-		room_goto_next();
+		if(global.roomname != "Room5"){
+			global.erros+=1;
+			room_goto_next();
+		}else room_goto_next();
 	}
 }
 
@@ -62,16 +64,28 @@ if(global.roomname == "Room1"){
 	if (ram==1){
 		global.acertos+=1;
 		room_goto_next()
-	}else if (item_errado==1){
+	}else if (item_errado==1 || processador==1){
 		global.erros+=1;
+		
 		room_goto_next()
 	}
 }else if(global.roomname == "Room2"){
-	if (ram==1){
-		global.erros+=1;
-		room_goto_next()
-	}else if (item_errado==1){
+	if (item_errado==1){
 		global.acertos+=1;
 		room_goto_next()
+	}else if (ram==1 || processador==1){
+		global.erros+=1;
+		room_goto_next()
 	}
+}else if(global.roomname == "Room3"){
+	if (processador==1){
+		global.acertos+=1;
+		room_goto_next()
+	}else if (item_errado==1 || ram==1){
+		global.erros+=1;
+		room_goto_next()
+	}
+
+}else if(global.roomname == "Room5"){
+	global.pergunta=ram*4;
 }

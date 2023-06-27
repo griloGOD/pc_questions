@@ -7,6 +7,7 @@ global.roomname = room_get_name(room);
 
 ram=0;
 item_errado=0;
+processador=0;
 
 spd=4;
 
