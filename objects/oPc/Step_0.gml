@@ -80,11 +80,11 @@ if(global.roomname == "Room1"){
 		room_goto_next()
 	}
 }else if(global.roomname == "Room3"){
-	if (processador==1){
+	if (hd==1){
 		audio_play_sound(sdCerto,1,0);
 		global.acertos+=1;
 		room_goto_next()
-	}else if (item_errado==1 || ram==1){
+	}else if (ram==1 || teclado==1){
 		audio_play_sound(sdErrado,1,0);
 		global.erros+=1;
 		room_goto_next()
