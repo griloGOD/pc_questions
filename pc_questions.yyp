@@ -23,7 +23,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.2.1.75",
   },
   "resources": [
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
@@ -45,6 +45,7 @@
     {"id":{"name":"oPc","path":"objects/oPc/oPc.yy",},},
     {"id":{"name":"ftMenu","path":"fonts/ftMenu/ftMenu.yy",},},
     {"id":{"name":"oTransicao","path":"objects/oTransicao/oTransicao.yy",},},
+    {"id":{"name":"sdTimelost","path":"sounds/sdTimelost/sdTimelost.yy",},},
     {"id":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"id":{"name":"sdErrado","path":"sounds/sdErrado/sdErrado.yy",},},
     {"id":{"name":"sTroia","path":"sprites/sTroia/sTroia.yy",},},

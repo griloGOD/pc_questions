@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sdCerto",
+  "name": "sdTimelost",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.548571,
+  "duration": 0.339592,
   "parent": {
     "name": "Sons",
     "path": "folders/Sons.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sdCerto.mp3",
+  "soundFile": "sdTimelost.mp3",
   "type": 0,
-  "volume": 0.24,
+  "volume": 0.44,
 }

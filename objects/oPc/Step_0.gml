@@ -60,7 +60,7 @@ if (!global.pause){
 //Coletando os Itens
 
 if(global.roomname == "Room1"){
-	global.pergunta="Item responsável por guardar \ntemporariamente toda a informação \nque o computador precisa:";
+	global.pergunta=global.quest1;
 	if (ram==1){
 		audio_play_sound(sdCerto,1,0);
 		global.acertos+=1;
