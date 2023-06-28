@@ -53,7 +53,28 @@ if (!global.pause){
 		if(global.roomname != "Room5"){
 			global.erros+=1;
 			room_goto_next();
-		}else room_goto_next();
+			audio_play_sound(sdErrado,1,0);
+		}else if(global.roomname == "Room5"){
+			if(ram<=4){
+				global.erros+=1;
+				audio_play_sound(sdErrado,1,0);
+				room_goto_next();
+			}else {		
+				global.acertos+=1;
+				audio_play_sound(sdCerto,1,0);
+				room_goto_next();
+			}
+		}else if(global.roomname == "Room4"){
+			if(global.componente>=2){
+				global.acertos+=1;
+				audio_play_sound(sdCerto,1,0);
+				room_goto_next();
+			}else{
+				global.erros+=1;
+				audio_play_sound(sdErrado,1,0);
+				room_goto_next();
+			}
+		}
 	}
 }
 
@@ -90,6 +111,23 @@ if(global.roomname == "Room1"){
 		room_goto_next()
 	}
 
+}else if(global.roomname == "Room4"){
+	global.periferico=mouse+monitor+teclado;
+	global.componente=ram+hd+processador;
+	if(global.periferico==3){
+		global.acertos+=1;
+		audio_play_sound(sdCerto,1,0);
+		room_goto_next();
+	}else if(global.componente==2){
+		audio_play_sound(sdErrado,1,0);
+		global.erros+=1;
+		room_goto_next()
+	}
 }else if(global.roomname == "Room5"){
-	global.pergunta=ram*4;
+	global.ramtotal=ram*4;
+	if(ram==12){
+		global.acertos+=1;
+		audio_play_sound(sdCerto,1,0);
+		room_goto_next();
+	}
 }

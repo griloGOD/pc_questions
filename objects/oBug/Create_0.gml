@@ -1,2 +1,2 @@
-hsp=random_range(-2,2)
-vsp=random_range(-2,2)
+hsp=random_range(-4,4)
+vsp=random_range(-4,4)

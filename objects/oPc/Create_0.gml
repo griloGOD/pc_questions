@@ -15,7 +15,9 @@ teclado=0;
 
 spd=4;
 
-global.pergunta="";
+global.periferico="";
+global.componente="";
+global.ramtotal="";
 
 global.tempo=15;
 global.tempo_restante = global.tempo;

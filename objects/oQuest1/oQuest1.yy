@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "Quests",
+    "path": "folders/Objetos/Quests.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -1,12 +1,7 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-
-
-
 quest = [
-	"Colete o componente resposável por",
-	"armazenar dados de forma volátil.",
-	"Pressione ENTER para iniciar"
+    "Colete o componente resposável por",
+    "armazenar dados de forma volátil.",
+    "Pressione ENTER para iniciar"
 ];
 
 index = 0;
