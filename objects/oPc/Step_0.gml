@@ -65,7 +65,7 @@ if (!global.pause){
 				room_goto_next();
 			}
 		}else if(global.roomname == "Room4"){
-			if(global.componente>=2){
+			if(global.periferico>=2){
 				global.acertos+=1;
 				audio_play_sound(sdCerto,1,0);
 				room_goto_next();
@@ -74,6 +74,20 @@ if (!global.pause){
 				audio_play_sound(sdErrado,1,0);
 				room_goto_next();
 			}
+		}else if(global.roomname == "Room7"){
+			if(global.componente==2){
+				global.acertos+=1;
+				audio_play_sound(sdCerto,1,0);
+				room_goto_next();
+			}else{
+				global.erros+=1;
+				audio_play_sound(sdErrado,1,0);
+				room_goto_next();
+			}
+		}else if(global.roomname == "Room10"){
+			global.erros+=1;
+			audio_play_sound(sdErrado,1,0);
+			room_goto_next();
 		}
 	}
 }
@@ -129,5 +143,53 @@ if(global.roomname == "Room1"){
 		global.acertos+=1;
 		audio_play_sound(sdCerto,1,0);
 		room_goto_next();
+	}
+}else if(global.roomname == "Room6"){
+	if (monitor==1){
+		audio_play_sound(sdCerto,1,0);
+		global.acertos+=1;
+		room_goto_next()
+	}else if (mouse==1 || teclado==1){
+		audio_play_sound(sdErrado,1,0);
+		global.erros+=1;
+		room_goto_next()
+	}
+}else if(global.roomname == "Room7"){
+	global.periferico=mouse+monitor+teclado+hd;
+	global.componente=ram+processador;
+	if(global.componente==2){
+		global.acertos+=1;
+		audio_play_sound(sdCerto,1,0);
+		room_goto_next();
+	}else if(global.periferico==2){
+		audio_play_sound(sdErrado,1,0);
+		global.erros+=1;
+		room_goto_next()
+	}
+}else if(global.roomname == "Room8"){
+	if (hd==1){
+		audio_play_sound(sdCerto,1,0);
+		global.acertos+=1;
+		room_goto_next()
+	}else if (monitor==1 || teclado==1 || processador==1 || ram==1){
+		audio_play_sound(sdErrado,1,0);
+		global.erros+=1;
+		room_goto_next()
+	}
+}else if(global.roomname == "Room9"){
+	if (processador==1){
+		audio_play_sound(sdCerto,1,0);
+		global.acertos+=1;
+		room_goto_next()
+	}else if (teclado==1 || ram==1){
+		audio_play_sound(sdErrado,1,0);
+		global.erros+=1;
+		room_goto_next()
+	}
+}else if(global.roomname == "Room10"){
+	if (hd==1){
+		audio_play_sound(sdCerto,1,0);
+		global.acertos+=1;
+		room_goto_next()
 	}
 }

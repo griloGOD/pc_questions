@@ -1,7 +1,7 @@
 quest = [
     "Colete o componente resposável por",
     "armazenar dados de forma física.",
-    "Pressione ENTER para iniciar"
+    "Pressione ESPAÇO para iniciar"
 ];
 
 index = 0;

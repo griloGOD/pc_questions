@@ -1,7 +1,7 @@
 quest = [
     "Colete somentes os dispositivos",
     "que são periféricos.",
-    "Pressione ENTER para iniciar"
+    "Pressione ESPAÇO para iniciar"
 ];
 
 index = 0;
